@@ -1,0 +1,12 @@
+---
+#
+# Most Debian/Ubuntu installations will lack python support to be managed by Ansible
+# This task is intended to be used as a first task after a fresh Ubuntu/Debian install
+# This will run a fukll apt update/update and will deploy a full python installation
+# We need this if we want to use Ansible to manage the target machine
+#
+
+- hosts: all
+  gather_facts: no
+  roles:
+    - init-debian-ubuntu 
