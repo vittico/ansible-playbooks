@@ -1,0 +1,49 @@
+- name: Installs a full vim
+  apt:
+    name: vim 
+    force: yes
+    update_cache: yes
+  environment: 
+    DEBIAN_FRONTEND: noninteractive
+  become: true
+  become_method: sudo
+
+- name: Installs htop
+  apt:
+    name: htop 
+    force: yes
+    update_cache: yes
+  environment:
+    DEBIAN_FRONTEND: noninteractive
+  become: true
+  become_method: sudo
+
+- name: Installs sysstat
+  apt:
+    name: sysstat
+    force: yes
+    update_cache: yes
+  environment:
+    DEBIAN_FRONTEND: noninteractive
+  become: true
+  become_method: sudo
+  
+- name: Installs util-linux
+  apt:
+    name: util-linux 
+    force: yes
+    update_cache: yes
+  environment:
+    DEBIAN_FRONTEND: noninteractive
+  become: true
+  become_method: sudo
+
+- name: Installs unzip
+  apt:
+    name: unzip
+    force: yes
+    update_cache: yes
+  environment:
+    DEBIAN_FRONTEND: noninteractive
+  become: true
+  become_method: sudo

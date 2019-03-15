@@ -1,0 +1,9 @@
+- name: Installs awscli
+  apt:
+    name: awscli
+    force: yes
+    update_cache: yes
+  environment:
+    DEBIAN_FRONTEND: noninteractive
+  become: true
+  become_method: sudo

@@ -1,0 +1,10 @@
+---
+#
+# Some basic linux utils I like/use
+#
+
+- hosts: all
+  gather_facts: no
+  roles:
+    - install-some-basic-utils 
+

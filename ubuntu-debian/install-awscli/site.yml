@@ -1,0 +1,11 @@
+---
+# 
+# AWS CLI install
+#
+
+- hosts: all
+  gather_facts: no
+  roles:
+    - install-awscli
+
+
